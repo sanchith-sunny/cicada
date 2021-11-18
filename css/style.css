@@ -12,6 +12,10 @@
   font-family: android;
 }
 
+#justify {
+  text-align: justify;
+}
+
 .text-space-yellow {
     color: #51D176;
 }
