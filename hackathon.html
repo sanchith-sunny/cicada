@@ -28,6 +28,7 @@
   <link rel="icon" type="image/png" sizes="16x16" href="images/icons/cicada-icon-32x32.png">
   <link rel="shortcut-icon" href="favicon.ico">
   <link rel="manifest" href="manifest.json">
+  <link href="/hackathon.css" rel="stylesheet" type="text/css">
   <link href="css/tailwind.min.css" rel="stylesheet" />
   <link href="css/style.css" rel="stylesheet" />
   <meta name="msapplication-TileColor" content="#f9fafb">
@@ -125,7 +126,29 @@
   </main>
 
   <countdown>
-    
+    <div class="flex flex-wrap justify-center text-center mb-6">
+      <div class="w-full lg:w-6/12 px-4">
+        <p class="text-3xl md:text-6xl my-6 font-semibold">Time Left...</p>
+        <div class="timer">
+          <div>
+            <p class="text-3xl md:text-4xl my-4 font-semibold">00</p>
+            <span>Days</span>
+          </div>
+          <div>
+            <p class="text-3xl md:text-4xl my-4 font-semibold">00</p>
+            <span>Hours</span>
+          </div>
+          <div>
+            <p class="text-3xl md:text-4xl my-4 font-semibold">00</p>
+            <span>Minutes</span>
+          </div>
+          <div>
+            <p class="text-3xl md:text-4xl my-4 font-semibold">00</p>
+            <span>Seconds</span>
+          </div>
+        </div>
+      </div>
+    </div>
   </countdown>
   
   <footer class="relative bg-gray-555 pt-8 pb-6">
