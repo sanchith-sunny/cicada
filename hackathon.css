@@ -1,0 +1,21 @@
+.cntdn
+{
+    text-align: center;
+    font-size: 60px;
+}
+
+.timer
+{
+    text-align: center;
+    
+    font-size: 30px;
+    display:flex;
+    padding-left: 11cm;
+}
+
+
+.timer div
+{
+    flex-basis: 150px;
+
+}

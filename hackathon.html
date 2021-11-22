@@ -124,32 +124,48 @@
       </div>
     </div>-->
   </main>
+<countdown class="cntdn">
 
-  <countdown>
-    <div class="flex flex-wrap justify-center text-center mb-6">
-      <div class="w-full lg:w-6/12 px-4">
-        <p class="text-3xl md:text-6xl my-6 font-semibold">Time Left...</p>
-        <div class="timer">
-          <div>
-            <p class="text-3xl md:text-4xl my-4 font-semibold">00</p>
-            <span>Days</span>
-          </div>
-          <div>
-            <p class="text-3xl md:text-4xl my-4 font-semibold">00</p>
-            <span>Hours</span>
-          </div>
-          <div>
-            <p class="text-3xl md:text-4xl my-4 font-semibold">00</p>
-            <span>Minutes</span>
-          </div>
-          <div>
-            <p class="text-3xl md:text-4xl my-4 font-semibold">00</p>
-            <span>Seconds</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </countdown>
+  <h1>Time Left...</h1>
+  <div id ="android">
+  <p id="demo"></p>
+
+  <script>
+
+  var countDownDate = new Date("Dec 16, 2021 16:30:00").getTime();
+
+  var x = setInterval(function() {
+
+    
+    var now = new Date().getTime();
+      
+  
+    var distance = countDownDate - now;
+      
+  
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+      
+  
+    document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+    + minutes + "m " + seconds + "s ";
+       
+    if (distance < 0) {
+      clearInterval(x);
+      document.getElementById("demo").innerHTML = "EXPIRED";
+    }
+  }, 1000);
+  </script>
+  <h1>.</h>
+  </div>
+
+</countdown>
+
+  <schedule>
+
+  </schedule>
   
   <footer class="relative bg-gray-555 pt-8 pb-6">
     <div class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
