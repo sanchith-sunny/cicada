@@ -104,7 +104,7 @@
   <main>
     <div class="container min-h-full mx-auto flex flex-col md:flex-row items-center my-12 md:my-36">
       <div class="flex flex-col w-full lg:w-1/3 justify-center items-start p-8">
-        <h1 class="lg:block ml-4 mb-4 p-5 text-7xl text-teal-555 tracking-loose" id="android">The Hackathon</h1>
+        <h1 class="lg:block ml-4 mb-4 p-5 text-7xl text-teal-555 tracking-loose" id="android">CICADA Hackathon</h1>
         <h2 class="text-3xl md:text-4xl leading-relaxed md:leading-snug mb-2">17&18
         </h2>
         <p class="text-sm md:text-base text-gray-555 mb-4" id="justify">A hackathon is a design sprint-like event; often, in which computer programmers and others involved in software development, 
@@ -124,46 +124,49 @@
       </div>
     </div>-->
   </main>
+
+
 <countdown class="cntdn">
 
   <h1>Time Left...</h1>
   <div id ="android">
-  <p id="demo"></p>
+  <p id="demo" class="text-teal-555"></p>
 
   <script>
 
-  var countDownDate = new Date("Dec 16, 2021 16:30:00").getTime();
+    var countDownDate = new Date("Dec 16, 2021 16:30:00").getTime();
 
-  var x = setInterval(function() {
+    var x = setInterval(function() 
+    {
 
+      
+      var now = new Date().getTime();
+      var distance = countDownDate - now;
+        
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        
     
-    var now = new Date().getTime();
-      
-  
-    var distance = countDownDate - now;
-      
-  
-    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-      
-  
-    document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-    + minutes + "m " + seconds + "s ";
-       
-    if (distance < 0) {
-      clearInterval(x);
-      document.getElementById("demo").innerHTML = "EXPIRED";
-    }
-  }, 1000);
+      document.getElementById("demo").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+        
+      if (distance < 0) 
+      {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "Registrations Closed";
+      }
+    }, 1000);
   </script>
-  <h1>.</h>
-  </div>
-
+</div>
 </countdown>
+<br>
+<br>
 
-  <schedule>
+
+  <schedule class="sch">
+    <h1>Schedule of Events</h1>
+
 
   </schedule>
   
