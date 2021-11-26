@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>CICADA - Team</title>
+  <title>CICADA - Hackathon</title>
   <meta name="author" content="team-techfest" />
   <meta name="description" content="Official Website of CICADA 1718 " />
   <meta name="keywords" content="webiste,techfest,2021" />
@@ -28,6 +28,7 @@
   <link rel="icon" type="image/png" sizes="16x16" href="images/icons/cicada-icon-32x32.png">
   <link rel="shortcut-icon" href="favicon.ico">
   <link rel="manifest" href="manifest.json">
+  <link href="/hackathon.css" rel="stylesheet" type="text/css">
   <link href="css/tailwind.min.css" rel="stylesheet" />
   <link href="css/style.css" rel="stylesheet" />
   <meta name="msapplication-TileColor" content="#f9fafb">
@@ -97,7 +98,84 @@
   </nav>
 
   <!--Your Content Here Rohan, Dont freak out if the footer and header are merged once you put the content it will set right-->
+  
+  <!--Thank you Sanchith for your kind words!-->
+  
+  <main>
+    <div class="container min-h-full mx-auto flex flex-col md:flex-row items-center my-12 md:my-36">
+      <div class="flex flex-col w-full lg:w-1/3 justify-center items-start p-8">
+        <h1 class="lg:block ml-4 mb-4 p-5 text-7xl text-teal-555 tracking-loose" id="android">CICADA <div id="font">Hackathon</div></h1>
+        <h2 class="text-3xl md:text-4xl leading-relaxed md:leading-snug mb-2">1718
+        </h2>
+        <p class="text-sm md:text-base text-gray-555 mb-4" id="justify">A hackathon is a design sprint-like event; often, in which computer programmers and others involved in software development, 
+        including graphic designers, interface designers, project managers, domain experts, and others collaborate intensively on software projects</p>
+        <a href="events"
+          class="bg-transparent hover:bg-yellow-555 text-teal-555 hover:text-white rounded shadow hover:shadow-lg py-2 px-4 border border-yellow-555 hover:border-transparent">
+          Explore Now</a>
+      </div>
 
+      <div class="p-8 mt-12 mb-6 md:mb-0 md:mt-0 ml-0 md:ml-12 lg:w-2/3  justify-center">
+        <div class="h-48 flex flex-wrap content-center">
+          <br> <br>
+          <!--Images to be added
+          <div><img class="inline-block mt-28 hidden lg:block" src="images/hack1.jpg"></div>
+          <div><img class="inline-block p-8 md:p-0" width="350 px" src="images/hack2.jpg"></div>-->
+          <div><img class="inline-block mt-28 hidden lg:block" src="images/hack3.jpg"></div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+<countdown class="cntdn">
+
+
+  <div id ="android">
+  <p id="demo" class="text-teal-555"></p>
+
+  <script>
+
+    var countDownDate = new Date("Dec 17, 2021 16:00:00").getTime();
+
+    var x = setInterval(function() 
+    {
+
+      
+      var now = new Date().getTime();
+      var distance = countDownDate - now;
+        
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        
+    
+      document.getElementById("demo").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+        
+      if (distance < 0) 
+      {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "Registrations Closed";
+      }
+    }, 1000);
+  </script>
+</div>
+<h1>Time Left...</h1>
+</countdown>
+<br>
+
+
+
+  <schedule class="sch">
+    <h1>Schedule of Events</h1>
+    <div class="but">
+    <button onclick="day1()" class="btn">Day 1</button>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <button class="btn">Day 2</button>
+<h1>.</h1>
+    </div>
+  </schedule>
+  
   <footer class="relative bg-gray-555 pt-8 pb-6">
     <div class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
         style="height: 80px;">
