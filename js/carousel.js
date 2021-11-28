@@ -1,4 +1,4 @@
-var events = ["Engineers on Board", "Code Relay 3.0", "Electronics Hackathon", "kaintCAD"];
+var events = [""];
 var departments = ["A chess event", "Computer Science Engineering", "Electronics and Comm. Engg.", "Mechancal Engineering"];
 var totalLayout = 4
 
