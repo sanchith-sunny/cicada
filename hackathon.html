@@ -168,34 +168,202 @@
 
   <schedule class="sch">
     <h1>Schedule of Events</h1>
-    <div class="container mb-0 md:mb-24 py-4">
-      <div class="container mx-auto flex flex-col md:flex-row mt-24 md:mt-24">
-        <div class="flex flex-col w-full lg:w-3/5 p-8">
+    <div class="but">
+    <button class="btn" onclick="day1()">Day 1</button>
+    <script>
+      function day1() {
+        var x = document.getElementById("firstDay");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      }
+      </script>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <button class="btn" onclick="day2()">Day 2</button>
+    <script>
+      function day2() {
+        var x = document.getElementById("secondDay");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      }
+      </script>
 
-          <button class="accordion">Day 1</button>
-          <div class="panel">
-            <p>Event 1:<br>
-               Event 2:<br>
-               Event 3:<br>
-               Event 4:<br>
-            </p>
+    </div>
+    <br>
+
+    <div id="firstDay" class="ml-0 md:ml-12 lg:w-2/3 sticky">
+      <div class="container mx-auto w-full h-full">
+        <div class="relative wrap overflow-hidden p-10 h-full">
+          <div class="border-2-2 border-yellow-555 absolute h-full border"
+            style="right: 50%; border: 2px solid #51D176; border-radius: 1%;"></div>
+          <div class="border-2-2 border-yellow-555 absolute h-full border"
+            style="left: 50%; border: 2px solid #51D176; border-radius: 1%;"></div>
+          <div class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
+            <div class="order-1 w-5/12"></div>
+            <div class="order-1 w-5/12 px-1 py-4 text-right">
+              <p class="mb-3 text-base text-teal-555">29 November-18 December, 2021</p>
+              <h4 class="mb-3 font-bold text-lg md:text-2xl">Registration</h4>
+              <p class="text-sm md:text-base leading-snug text-gray-555 text-opacity-100" id="justify">
+                Pick your favourite event(s) and register in that event by filling the form corresponding to that
+                event. Its that easy :)
+              </p>
+            </div>
+          </div>
+          <div class="mb-8 flex justify-between items-center w-full right-timeline">
+            <div class="order-1 w-5/12"></div>
+            <div class="order-1  w-5/12 px-1 py-4 text-left">
+              <p class="mb-3 text-base text-teal-555">20-21 December, 2021</p>
+              <h4 class="mb-3 font-bold text-lg md:text-2xl">Participation</h4>
+              <p class="text-sm md:text-base leading-snug text-gray-555 text-opacity-100" id="justify">
+                Participate offline. The details for your registered events will be sent to you via email and whatsapp
+                groups. Use those details and show your talent.
+              </p>
+            </div>
           </div>
 
-          <button class="accordion">Day 2</button>
-          <div class="panel">
-              <p>Event 1:<br>
-               Event 2:<br>
-               Event 3:<br>
-               Event 4:<br>
+          <div class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
+            <div class="order-1 w-5/12"></div>
+            <div class="order-1 w-5/12 px-1 py-4 text-right">
+              <p class="mb-3 text-base text-teal-555">4:00 PM, 20 December, 2021</p>
+              <h4 class="mb-3 font-bold text-lg md:text-2xl">Hackathon Begins</h4>
+              <p class="text-sm md:text-base leading-snug text-gray-555 text-opacity-100" id="justify">
+                An open hackathon is going to start , Onboarding will start from 3:00 PM
+              </p>
+            </div>
+          </div>
+
+          <div class="mb-8 flex justify-between items-center w-full right-timeline">
+            <div class="order-1 w-5/12"></div>
+            <div class="order-1  w-5/12 px-1 py-4 text-left">
+              <p class="mb-3 text-base text-teal-555">4:00 PM 21 December, 2021</p>
+              <h4 class="mb-3 font-bold text-lg md:text-2xl">Hackathon Ends</h4>
+              <p class="text-sm md:text-base leading-snug text-gray-555 text-opacity-100" id="justify">
+                The hackathon ends here and the prizes will be distributed in the valedictory function,
+              </p>
+            </div>
+          </div>
+
+          <div class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
+            <div class="order-1 w-5/12"></div>
+            <div class="order-1 w-5/12 px-1 py-4 text-right">
+              <p class="mb-3 text-base text-teal-555"> 22 December, 2021</p>
+              <h4 class="mb-3 font-bold text-lg md:text-2xl">Result Declaration</h4>
+              <p class="text-sm md:text-base leading-snug text-gray-555 text-opacity-100" id="justify">
+                The ultimate genius will be revealed by our judging panel on 22nd December, 2021 and the results will be
+                announced on the Whatsapp groups and will be mailed to you.
+              </p>
+            </div>
+          </div>
+
+          <div class="mb-8 flex justify-between items-center w-full right-timeline">
+            <div class="order-1 w-5/12"></div>
+
+            <div class="order-1  w-5/12 px-1 py-4">
+              <p class="mb-3 text-base text-teal-555">Shortly after result declaration</p>
+              <h4 class="mb-3 font-bold  text-lg md:text-2xl text-left">Prize Distribution</h4>
+              <p class="text-sm md:text-base leading-snug text-gray-555 text-opacity-100" id="justify">
+                The winners will be contacted by our team to collect thier prizes in the valedictory function. Enjoy your prizes :)
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="secondDay" class="ml-0 md:ml-12 lg:w-2/3 sticky">
+    <div class="container mx-auto w-full h-full">
+      <div class="relative wrap overflow-hidden p-10 h-full">
+        <div class="border-2-2 border-yellow-555 absolute h-full border"
+          style="right: 50%; border: 2px solid #51D176; border-radius: 1%;"></div>
+        <div class="border-2-2 border-yellow-555 absolute h-full border"
+          style="left: 50%; border: 2px solid #51D176; border-radius: 1%;"></div>
+        <div class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
+          <div class="order-1 w-5/12"></div>
+          <div class="order-1 w-5/12 px-1 py-4 text-right">
+            <p class="mb-3 text-base text-teal-555">29 November-18 December, 2021</p>
+            <h4 class="mb-3 font-bold text-lg md:text-2xl">Registration</h4>
+            <p class="text-sm md:text-base leading-snug text-gray-555 text-opacity-100" id="justify">
+              Pick your favourite event(s) and register in that event by filling the form corresponding to that
+              event. Its that easy :)
             </p>
           </div>
+        </div>
+        <div class="mb-8 flex justify-between items-center w-full right-timeline">
+          <div class="order-1 w-5/12"></div>
+          <div class="order-1  w-5/12 px-1 py-4 text-left">
+            <p class="mb-3 text-base text-teal-555">20-21 December, 2021</p>
+            <h4 class="mb-3 font-bold text-lg md:text-2xl">Participation</h4>
+            <p class="text-sm md:text-base leading-snug text-gray-555 text-opacity-100" id="justify">
+              Participate offline. The details for your registered events will be sent to you via email and whatsapp
+              groups. Use those details and show your talent.
+            </p>
+          </div>
+        </div>
+
+        <div class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
+          <div class="order-1 w-5/12"></div>
+          <div class="order-1 w-5/12 px-1 py-4 text-right">
+            <p class="mb-3 text-base text-teal-555">4:00 PM, 20 December, 2021</p>
+            <h4 class="mb-3 font-bold text-lg md:text-2xl">Hackathon Begins</h4>
+            <p class="text-sm md:text-base leading-snug text-gray-555 text-opacity-100" id="justify">
+              An open hackathon is going to start , Onboarding will start from 3:00 PM
+            </p>
+          </div>
+        </div>
+
+        <div class="mb-8 flex justify-between items-center w-full right-timeline">
+          <div class="order-1 w-5/12"></div>
+          <div class="order-1  w-5/12 px-1 py-4 text-left">
+            <p class="mb-3 text-base text-teal-555">4:00 PM 21 December, 2021</p>
+            <h4 class="mb-3 font-bold text-lg md:text-2xl">Hackathon Ends</h4>
+            <p class="text-sm md:text-base leading-snug text-gray-555 text-opacity-100" id="justify">
+              The hackathon ends here and the prizes will be distributed in the valedictory function,
+            </p>
+          </div>
+        </div>
+
+        <div class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
+          <div class="order-1 w-5/12"></div>
+          <div class="order-1 w-5/12 px-1 py-4 text-right">
+            <p class="mb-3 text-base text-teal-555"> 22 December, 2021</p>
+            <h4 class="mb-3 font-bold text-lg md:text-2xl">Result Declaration</h4>
+            <p class="text-sm md:text-base leading-snug text-gray-555 text-opacity-100" id="justify">
+              The ultimate genius will be revealed by our judging panel on 22nd December, 2021 and the results will be
+              announced on the Whatsapp groups and will be mailed to you.
+            </p>
+          </div>
+        </div>
+
+        <div class="mb-8 flex justify-between items-center w-full right-timeline">
+          <div class="order-1 w-5/12"></div>
+
+          <div class="order-1  w-5/12 px-1 py-4">
+            <p class="mb-3 text-base text-teal-555">Shortly after result declaration</p>
+            <h4 class="mb-3 font-bold  text-lg md:text-2xl text-left">Prize Distribution</h4>
+            <p class="text-sm md:text-base leading-snug text-gray-555 text-opacity-100" id="justify">
+              The winners will be contacted by our team to collect thier prizes in the valedictory function. Enjoy your prizes :)
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
   </schedule>
 
   <faq id="faqq">
     <div class="container mb-0 md:mb-24 py-4">
       <div class="container mx-auto flex flex-col md:flex-row mt-24 md:mt-24">
         <div class="flex flex-col w-full lg:w-3/5 p-8">
-          <p class="text-6xl md:text-10xl text-teal-555 my-4 leading-relaxed md:leading-snug" id="android">FAQ
+          <p class="text-3xl md:text-5xl text-teal-555 my-4 leading-relaxed md:leading-snug" id="android">FAQ
           </p>
 
           <button class="accordion">When is the hackathon?</button>
@@ -232,8 +400,6 @@
       </div>
     </div>
   </faq>
-
-  <!-- My content will end here Sanchith-->
   
   <footer class="relative bg-gray-555 pt-8 pb-6">
     <div class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"

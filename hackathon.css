@@ -10,7 +10,7 @@
     font-size: 60px;   
 }
 
-.accordion
+.btn
 {
 border: 2px solid black;
 border-radius: 5px;
@@ -22,7 +22,7 @@ cursor: pointer;
 border-color: #0dd68c;
 }
 
-.accordion:hover{
+.btn:hover{
     background-color:#51D176;
     color: white;
   }
